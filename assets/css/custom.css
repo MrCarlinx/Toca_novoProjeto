@@ -1,0 +1,61 @@
+/* assets/css/custom.css */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Sombra premium usada em cards */
+.premium-shadow {
+    box-shadow: 0 20px 40px -15px rgba(13, 28, 50, 0.08);
+}
+
+.custom-shadow {
+    box-shadow: 0 10px 30px -10px rgba(13, 28, 50, 0.08);
+}
+
+/* Hover elevação em cards de produto */
+.card-hover {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card-hover:hover {
+    box-shadow: 0 20px 40px -15px rgba(13, 28, 50, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Input minimalista linha inferior */
+.minimal-input {
+    border: none;
+    border-bottom: 1.5px solid #0d1c32;
+    background: transparent;
+    transition: border-width 0.2s ease;
+}
+.minimal-input:focus {
+    outline: none;
+    border-bottom-width: 3px;
+    box-shadow: none;
+}
+
+/* Bullet de coelho */
+.rabbit-bullet::before {
+    content: 'rabbit';
+    font-family: 'Material Symbols Outlined';
+    font-size: 14px;
+    color: #e9c176;
+    margin-right: 8px;
+}
+
+/* Animação flutuante (landing page) */
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+.floating          { animation: float 6s ease-in-out infinite; }
+.floating-delayed  { animation: float 6s ease-in-out 3s infinite; }
+
+/* Card de vidro (glass) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(228, 226, 226, 0.5);
+}
